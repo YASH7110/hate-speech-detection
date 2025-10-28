@@ -1,0 +1,79 @@
+port axios from 'axios';
+
+const API_BASE_URL = 'http://localhost:8000/api';
+
+const api = axios.create({
+  baseURL: API_BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+// Prediction API
+export const predictSingle = async (text) => {
+  const response = await api.post('/predict/single', { text });
+  return response.data;
+};
+
+export const predictBatch = async (comments) => {
+  const response = await api.post('/predict/batch', { comments });
+  return response.data;
+};
+
+// Twitter API
+export const searchTweets = async (keyword, maxResults = 100) => {
+  const response = await api.get('/twitter/search', {
+    params: { keyword, max_results: maxResults }
+  });
+  return response.data;
+};import axios from 'axios';
+
+const API_BASE_URL = 'http://localhost:8000/api';
+
+const api = axios.create({
+  baseURL: API_BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+// Prediction API
+export const predictSingle = async (text) => {
+  const response = await api.post('/predict/single', { text });
+  return response.data;
+};
+
+export const predictBatch = async (comments) => {
+  const response = await api.post('/predict/batch', { comments });
+  return response.data;
+};
+
+// Manual comment prediction (formatted for display)
+export const predictSingleComment = async (text) => {
+  try {
+    const response = await api.post('/predict/single', { text });
+    
+    // Format response to match other analysis results
+    return [{
+      text: text,
+      classification: response.data.classification,
+      confidence: response.data.confidence,
+      language: response.data.language,
+      probabilities: response.data.probabilities,
+      timestamp: new Date().toISOString()
+    }];
+  } catch (error) {
+    console.error('Error predicting comment:', error);
+    throw error;
+  }
+};
+
+// Twitter API
+export const searchTweets = async (query, maxResults = 100) => {
+  const response = await api.get('/twitter/search', {
+    params: { query, max_results: maxResults }
+  });
+  return response.data;
+};
+
+export const getUserTweets = async (username, maxResults = 100) => {
