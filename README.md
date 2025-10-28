@@ -1,3 +1,39 @@
+Screenshots :
+
+<img width="1440" height="900" alt="Screenshot 2025-10-28 at 10 06 18 AM" src="https://github.com/user-attachments/assets/e16bd44b-6dbd-4171-b01d-6975b430847d" />
+
+
+
+<img width="1440" height="900" alt="Screenshot 2025-10-28 at 10 06 23 AM" src="https://github.com/user-attachments/assets/fcbb7760-2280-4acb-9463-777bec2ae405" />
+
+<img width="1329" height="246" alt="Screenshot 2025-10-28 at 10 07 11 AM" src="https://github.com/user-attachments/assets/2f06d309-f346-4b30-b01e-da0bbb9e86bf" />
+
+
+
+
+Link to model files : 
+🔗✅
+https://drive.google.com/drive/folders/1_AwpzUfy7xfhDMPrCqhNOIaGa1TKH8o2?usp=sharing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 🚫 Hate Speech Detection System
 
 A full-stack multilingual hate speech detection application using Machine Learning, FastAPI, and React.
@@ -69,5 +105,5 @@ MIT License
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@yourusername](https://github.com/YASH7110)
 
