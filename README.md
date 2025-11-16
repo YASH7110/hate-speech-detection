@@ -16,7 +16,7 @@ Screenshots :
 Link to model files : -
 🔗✅
 
-https://drive.google.com/drive/folders/1_AwpzUfy7xfhDMPrCqhNOIaGa1TKH8o2?usp=sharing
+..
 
 
 
